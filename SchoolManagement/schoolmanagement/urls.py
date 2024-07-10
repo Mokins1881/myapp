@@ -9,6 +9,7 @@ from school import views
 from django.contrib.auth.views import LoginView,LogoutView
 
 urlpatterns = [
+    path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('',views.home_view,name=''),
 
@@ -74,10 +75,10 @@ urlpatterns = [
 
     path('student-dashboard', views.student_dashboard_view,name='student-dashboard'),
     path('student-attendance', views.student_attendance_view,name='student-attendance'),
-
-
-
-
     path('aboutus', views.aboutus_view),
     path('contactus', views.contactus_view),
+
 ]
+
+
+
