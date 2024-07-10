@@ -1,0 +1,19 @@
+# Virtual Environment
+venv/
+env/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
+db.sqlite3
+
+# Environment Variables
+.env
+
+# VSCode
+.vscode/
+git add .gitignore
+git commit -m "Add .gitignore file"
+git push
